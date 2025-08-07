@@ -1,4 +1,4 @@
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = "AIzaSyCnctQo3wCSfNU9eSRWfsKwNUi2qH_1oQI";
 const weatherKey = "2ed7b97226de42162349e201ad43ff9f";
 
 const chatBox = document.getElementById("chatBox");
@@ -190,4 +190,5 @@ async function fetchWeatherByCity(city) {
     appendMessage("bot", "❌ Error fetching city weather.");
   }
 }
+
 
