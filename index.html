@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini AI Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="chat-container">
+    <header class="chat-header">
+      🤖 Gemini AI Chat
+      <div class="chat-actions">
+        <button id="toggleTheme" title="Toggle light/dark mode">🌗</button>
+        <button id="clearChat" title="Clear chat history">🧹</button>
+      </div>
+    </header>
+
+    <section class="chat-box" id="chatBox"></section>
+
+    <div class="prompt-buttons">
+      <button onclick="sendPrompt('Tell me a joke')">😂 Joke</button>
+      <button onclick="sendPrompt('What\'s the weather today?')">🌦️ Weather</button>
+      <button onclick="sendPrompt('Give me a productivity tip')">💡 Tip</button>
+    </div>
+
+    <footer class="input-area">
+      <input type="text" id="userInput" placeholder="Type something like 'Hi there!'..." />
+      <button onclick="handleSend()">Send</button>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
